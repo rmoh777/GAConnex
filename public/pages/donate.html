@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | GA Connects</title>
+  <meta name="description" content="Support GA Connects in bridging the digital divide in Georgia. Your donation helps provide internet access and digital resources to underserved communities.">
+  <!-- Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/custom.css">
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Header -->
+  <header class="container-fluid py-3 border-bottom bg-white">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/" class="navbar-brand">
+        <img src="../images/logo.svg" alt="GA Connects Logo" height="40" />
+      </a>
+      <nav>
+        <!-- Navigation Placeholder -->
+        <span class="d-none d-md-inline">[Navigation]</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="../images/logo.svg" alt="GA Connects" height="30" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link" href="/pages/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/connect/find-service.html">Connect</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/advocacy/current-initiatives.html">Advocacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/policy/research.html">Policy</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/news/index.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/pages/donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 mb-4">Support Digital Equity in Georgia</h1>
+          <p class="lead mb-4">Your donation helps us bridge the digital divide and provide internet access to underserved communities across Georgia.</p>
+          <a href="#donate-form" class="btn btn-warning btn-lg">Donate Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Impact Section -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">Your Impact</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="h1 text-primary mb-3">$50</h3>
+              <p class="mb-0">Provides one month of internet access for a family in need</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="h1 text-primary mb-3">$100</h3>
+              <p class="mb-0">Supports digital skills training for 5 community members</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="h1 text-primary mb-3">$500</h3>
+              <p class="mb-0">Helps establish a new community internet access point</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section id="donate-form" class="mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h3 mb-4">Make a Donation</h2>
+              <form>
+                <!-- Donation Amount -->
+                <div class="mb-4">
+                  <label class="form-label">Select Amount</label>
+                  <div class="row g-2">
+                    <div class="col-6 col-md-3">
+                      <input type="radio" class="btn-check" name="amount" id="amount50" value="50">
+                      <label class="btn btn-outline-primary w-100" for="amount50">$50</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <input type="radio" class="btn-check" name="amount" id="amount100" value="100">
+                      <label class="btn btn-outline-primary w-100" for="amount100">$100</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <input type="radio" class="btn-check" name="amount" id="amount500" value="500">
+                      <label class="btn btn-outline-primary w-100" for="amount500">$500</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <input type="radio" class="btn-check" name="amount" id="amountCustom" value="custom">
+                      <label class="btn btn-outline-primary w-100" for="amountCustom">Custom</label>
+                    </div>
+                  </div>
+                  <div class="mt-3 d-none" id="customAmount">
+                    <input type="number" class="form-control" placeholder="Enter amount">
+                  </div>
+                </div>
+
+                <!-- Donor Information -->
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="mt-4">
+                  <h3 class="h5 mb-3">Payment Information</h3>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="cardNumber" class="form-label">Card Number</label>
+                      <input type="text" class="form-control" id="cardNumber" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="expiry" class="form-label">Expiry Date</label>
+                      <input type="text" class="form-control" id="expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="cvv" class="form-label">CVV</label>
+                      <input type="text" class="form-control" id="cvv" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">Complete Donation</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Ways to Give -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">Other Ways to Give</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Monthly Giving</h3>
+              <p>Set up a recurring monthly donation to provide sustained support for our programs.</p>
+              <a href="#" class="btn btn-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Corporate Matching</h3>
+              <p>Double your impact through your employer's matching gift program.</p>
+              <a href="#" class="btn btn-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container-fluid py-4 border-top bg-light mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+        &copy; 2024 GA Connects
+      </div>
+      <div class="col-md-4 text-center mb-2 mb-md-0">
+        <!-- Social Links Placeholder -->
+        <span>[Social Links]</span>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <!-- Basic Site Navigation Links -->
+        <a href="/pages/about.html" class="me-3">About</a>
+        <a href="/pages/contact.html" class="me-3">Contact</a>
+        <a href="/pages/donate.html">Donate</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

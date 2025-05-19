@@ -1,0 +1,123 @@
+:root {
+  /* Brand Colors */
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --accent-color: #ffc107;
+  --text-color: #212529;
+  --light-bg: #f8f9fa;
+  --dark-bg: #212529;
+
+  /* Typography */
+  --font-family-base: 'Segoe UI', Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.875rem;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+/* Base Styles */
+body {
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Navigation Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--light-bg);
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Form Styles */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-light {
+  background-color: var(--light-bg) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+} 

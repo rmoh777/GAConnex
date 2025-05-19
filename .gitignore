@@ -1,0 +1,25 @@
+# Node modules (if ever used)
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Vercel build output
+.vercel/
+
+# Misc
+*.bak 

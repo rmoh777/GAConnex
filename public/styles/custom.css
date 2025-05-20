@@ -82,11 +82,6 @@ body {
   background-color: var(--primary-color) !important;
 }
 
-.hero-section {
-  padding-top: 2.25rem !important;
-  padding-bottom: 2.25rem !important;
-}
-
 /* Footer Styles */
 footer {
   background-color: var(--light-bg);

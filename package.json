@@ -1,0 +1,12 @@
+{
+  "name": "gaconnects",
+  "version": "1.0.0",
+  "description": "GA Connects Website",
+  "scripts": {
+    "build": "cp -r public/* .",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+} 

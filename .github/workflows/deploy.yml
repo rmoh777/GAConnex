@@ -3,19 +3,27 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Changed from main to master since that's your default branch
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          folder: .  # Deploy the entire repository
-          branch: gh-pages
-          clean: true 
+          node-version: '16'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build
+        run: npm run build
+        
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public 
